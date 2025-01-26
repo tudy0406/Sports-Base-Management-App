@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Fields List Container */
+.fieldsList {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Filter Section */
+.filter-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+#sport-filter {
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 1rem;
+}
+
+#filter-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#filter-button:hover {
+    background-color: #45a049;
+}
+
+/* Fields List Layout */
+#fieldsListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.details-container {
+    flex: 1; /* Takes most of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-container h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details-container h3 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Align Info Button to the Right */
+.book-button {
+    margin-left: auto; /* Push the button to the right */
+    padding: 10px 30px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.book-button:hover {
+    background-color: #1976D2;
+}

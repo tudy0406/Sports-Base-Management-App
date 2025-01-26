@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile Header */
+.profile-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+}
+
+/* Info Section */
+#info-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#info-section h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#info-section p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Highlighting Password */
+#password {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Employee and Customer Specific Fields */
+#info-section p:last-of-type {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Log Out Button */
+#logOutBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d9534f; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#logOutBtn:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    #info-section h1 {
+        font-size: 1.2em;
+    }
+
+    #info-section p {
+        font-size: 0.9rem;
+    }
+}

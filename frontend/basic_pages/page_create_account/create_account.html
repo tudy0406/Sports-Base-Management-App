@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="createstyle.css">
+    <link rel="stylesheet" href="/frontend/basic_pages/globalstyle.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="/frontend/basic_pages/page_info/info.html" id="logo">MySportsBase</a>
+        <div class="topnavButtons">
+            <a href="/frontend/basic_pages/page_info/info.html">Info</a>
+            <a href="/frontend/basic_pages/page_contact/contact.html">Contact</a>
+        </div>
+    </div> 
+    <div class="form-container">
+        <form id="createAccountForm">
+            <h2>Create Account</h2>
+
+            <!-- First Name -->
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+
+            <!-- Last Name -->
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+
+            <!-- Birthday -->
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+            <!-- User or Employee -->
+            <label for="role">I am a:</label>
+            <select id="role" name="role" required>
+                <option value="customer">Customer</option>
+                <option value="employee">Employee</option>
+            </select>
+
+            <!-- Special Password for Employees -->
+            <div id="employeePasswordContainer" style="display: none;">
+                <label for="employeePassword">Employee Special Password</label>
+                <input type="password" id="employeePassword" name="specialPassword" placeholder="Enter employee special password">
+            </div>
+
+            <!-- Log In Text -->
+            <a href="/frontend/basic_pages/page_login/login.html" id="logIn">Already have an account? Log in</a>
+
+            <!-- Submit Button -->
+            <button type="submit" id="createAccountButton">Create Account</button>
+        </form>
+    </div>
+    <script src="/frontend/scripts/create_account_script.js"></script> 
+</body>
+</html>

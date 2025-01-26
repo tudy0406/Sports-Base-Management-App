@@ -1,0 +1,113 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the top navigation bar */
+.topnav {
+    width: 100%;
+    background-color: #007bff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+
+#logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.topnavButtons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds spacing between the buttons */
+}
+
+.topnavButtons a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.topnavButtons a:hover, .dropbtn:hover {
+    background-color: #0056b3;
+}
+
+.topnavButtons a.active {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+/* Log In Button Styles */
+#logInBtn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #28a745; /* Green color for the login button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#logInBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001; 
+    right: 0;
+    margin-top: 10px; 
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-content a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}

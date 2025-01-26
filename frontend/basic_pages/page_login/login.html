@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="/frontend/basic_pages/globalstyle.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="/frontend/basic_pages/page_info/info.html" id="logo">MySportsBase</a>
+        <div class="topnavButtons">
+            <a href="/frontend/basic_pages/page_info/info.html">Info</a>
+            <a href="/frontend/basic_pages/page_contact/contact.html">Contact</a>
+        </div>
+    </div> 
+
+    <div class="form-container">
+        <form id="logInForm">
+            <h2>Log In</h2>
+
+            <!-- Email -->
+            <label for="userEmail">Email</label><br>
+            <input type="email" class="lInput" id="userEmail" name="userEmail" placeholder="Enter email address" required><br><br>
+
+            <!-- Password -->
+            <label for="userPassword">Password</label><br>
+            <input type="password" class="lInput" id="userPassword" name="userPassword" placeholder="Enter password" required><br><br>
+            
+            <!-- Create Account Text -->
+            <a href="/frontend/basic_pages/page_create_account/create_account.html" id="createAccount">Create account?</a>
+            
+            <button type="submit" id="logInButton">Log In</button>
+        </form>
+    </div>
+    <script src="/frontend/scripts/login.js"></script>
+</body>
+</html>

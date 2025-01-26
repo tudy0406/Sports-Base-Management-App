@@ -1,0 +1,231 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Matches the theme */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tables Container */
+.tables {
+    padding: 20px;
+    max-width: 1700px;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Buttons Styling */
+#table-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#table-buttons button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#table-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Edit Buttons Styling */
+#edit-buttons {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Add small space between elements */
+}
+
+#edit-buttons h1 {
+    font-size: 18px; /* Adjust size if necessary */
+    margin: 0; /* Remove default margin for proper alignment */
+}
+
+#edit-buttons select{
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+#edit-buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#edit-buttons select:focus,
+#edit-buttons button:focus {
+    outline: none;
+    background-color: #e9ecef;
+    border-color: #007bff;
+}
+
+#add-button {
+    background-color: #28a745; /* Green for Add button */
+    color: white;
+    border: none;
+}
+
+#add-button:hover {
+    background-color: #218838;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Scrollable Table Body */
+table tbody {
+    display: block;
+    max-height: 400px;
+    overflow-y: auto; 
+    width: 100%;
+}
+
+table thead, table tbody tr {
+    display: table; /* Retain table layout */
+    width: 100%; /* Matches column widths */
+    table-layout: fixed; /* Fixes column widths */
+}
+
+/* Scrollbar Styling for Table Body */
+table tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+table tbody::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Scrollbar color */
+    border-radius: 5px;
+}
+
+table tbody::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Scrollbar track color */
+}
+
+/* No Data Message */
+#noData {
+    display: none;
+    color: #dc3545;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+/* General Button Styles */
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit Button */
+#edit-button {
+    background-color: #ffa500; /* Orange for Edit */
+    color: white;
+}
+
+#edit-button:hover {
+    background-color: #e69500;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+#delete-button {
+    background-color: #dc3545; /* Red for Delete */
+    color: white;
+}
+
+#delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Maintenance Button */
+#maintenance-button {
+    background-color: #17a2b8; /* Teal for Maintenance */
+    color: white;
+}
+
+#maintenance-button:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+/* Align Action Buttons */
+.edit-buttons {
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #table-buttons, #edit-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

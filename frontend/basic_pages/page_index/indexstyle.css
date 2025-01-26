@@ -1,0 +1,67 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Title Section */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Information Section */
+.info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Actions Section */
+.actions {
+    margin-top: 30px;
+}
+
+.login-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+}

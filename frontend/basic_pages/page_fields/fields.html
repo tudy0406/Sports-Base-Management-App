@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fields</title>
+    <link rel="stylesheet" href="fieldsstyle.css">
+    <link rel="stylesheet" href="/frontend/basic_pages/globalstyle.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="/frontend/basic_pages/page_info/info.html" id="logo">MySportsBase</a>
+        <div class="topnavButtons">
+            <a id="fieldsButton" class="active" href="/frontend/basic_pages/page_fields/fields.html">Fields</a>
+            <a href="/frontend/basic_pages/page_info/info.html">Info</a>
+            <a href="/frontend/basic_pages/page_contact/contact.html">Contact</a>
+            <div class="dropdown" id="dropdown">
+                <button class="dropbtn">Options</button>
+                <div class="dropdown-content">
+                    <a href="/frontend/basic_pages/page_data_base/database.html" id="data-base">Data Base</a>
+                    <a href="/frontend/basic_pages/page_bookings/bookings.html" id="my-bookings">My Bookings</a>
+                    <a href="/frontend/basic_pages/page_profile/profile.html">My Profile</a>
+                </div>
+            </div>
+            <a id="logInBtn" href="/frontend/basic_pages/page_login/login.html">LogIn</a>
+        </div>
+    </div>
+    <div class="fieldsList">
+        <h1>Fields</h1>
+        
+        <!-- Filter Section -->
+        <div class="filter-container">
+            <select id="sport-filter">  
+                <!-- Sports options added dynamically -->
+            </select>  
+        </div>
+        
+        <!-- Fields List Container -->
+        <div id="fieldsListContainer">
+            <!-- Fields added dynamically -->
+        </div>
+    </div> 
+    
+    <script src="/frontend/scripts/fields.js"></script>
+    <script src="/frontend/scripts/global_navBar.js"></script>
+</body>
+</html>
