@@ -1,6 +1,8 @@
 # Sports-Base-Management-App
 Java Application for OOP-Course lab project
 
+Stack used: Java Spring, PostgreSQL, HTML, CSS, JavaScript
+
 Task Description
 The MySportsBase App is a Java-based application developed to streamline the management of a multi-sports facility. It provides distinct features for employees and customers, enabling efficient operations and user-friendly interactions.
 Key Features
